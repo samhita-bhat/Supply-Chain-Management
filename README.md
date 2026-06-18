@@ -46,11 +46,11 @@ Efficient warehouse operations are critical for supply chain performance. Organi
 
 ## Model Performance
 Model	Test R²
-Linear Regression	0.48
-Decision Tree	0.09
-Random Forest (Tuned)	0.56
-Gradient Boosting (Tuned)	0.56
-XGBoost (Tuned)	0.54
+- Linear Regression: 0.48
+- Decision Tree: 0.09
+- Random Forest (Tuned):	0.56
+- Gradient Boosting (Tuned):	0.56
+- XGBoost (Tuned):	0.54
 
 ## Best Model
 Gradient Boosting Regressor
