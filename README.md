@@ -15,34 +15,34 @@ Efficient warehouse operations are critical for supply chain performance. Organi
 •	Target Variable: product_wg_ton 
 
 ## Key Steps
-•	Conducted Exploratory Data Analysis (EDA) to understand data distribution, identify patterns and assess relationships between variables.
-•	Performed data cleaning by removing identifier variables (‘Ware_house_ID’ and ‘WH_Manager_ID’) that did not contribute to the prediction.
-•	Handled missing values using appropriate imputation techniques:
-o	‘workers_num’ – 990 missing values – Median imputation
-o	‘approved_wh_govt_certificate’ – 908 missing values – Mode imputation
-o	‘wh_est_year’ – 11881 missing values – transformed into ‘wh_age’ and imputed missing values.
-•	Engineered new features:
-o	Warehouse Age (wh_age)
-o	Infrastructure Score (infra_score)
-•	Detected outliers in ‘retail_shop_num’, ‘workers_num’ and ‘Competitor_in_mkt’. Applied IQR-based capping (Winsorization) to reduce the impact of extreme values while preserving valuable supply chain information.
-•	Applied Standard Scaler to normalise numerical features and improve model stability.
-•	Built a baseline Linear Regression model and evaluated RMSE, MAE, MAPE, R-squared, and Adjusted R-squared. 
-•	The Linear Regression model achieved an R² of 0.99, but its performance was heavily influenced by the highly correlated feature storage_issue_reported_l3m (correlation = 0.99).
-•	Developed an alternative baseline excluding this feature, the baseline model performance reduced to R² = 0.48, providing a more realistic benchmark.
-•	Developed and executed 6 advanced regression models:
-o	Decision Tree Regressor
-o	Bagging Regressor
-o	Random Forest Regressor
-o	AdaBoost Regressor
-o	Gradient Boosting Regressor
-o	XGBoost Regressor
-•	Selected Random Forest, Gradient Boosting, and XGBoost for hyperparameter tuning due to their strong predictive performance and potential for further improvements.
-•	Selected the Tuned Gradient Boosting Regressor as the final model based on:
-o	Highest Test R² Score (0.56)
-o	Lowest Test RMSE (7668.57)
-o	Strong generalisation capability
-o	Stable train-test performance
-•	Provided actionable insights and recommendations to improve warehouse operations, management, storage and overall efficiency.
+- Conducted Exploratory Data Analysis (EDA) to understand data distribution, identify patterns and assess relationships between variables.
+- Performed data cleaning by removing identifier variables (‘Ware_house_ID’ and ‘WH_Manager_ID’) that did not contribute to the prediction.
+- Handled missing values using appropriate imputation techniques:
+  - ‘workers_num’ – 990 missing values – Median imputation
+  - ‘approved_wh_govt_certificate’ – 908 missing values – Mode imputation
+  - ‘wh_est_year’ – 11881 missing values – transformed into ‘wh_age’ and imputed missing values.
+- Engineered new features:
+  - Warehouse Age (wh_age)
+  - Infrastructure Score (infra_score)
+- Detected outliers in ‘retail_shop_num’, ‘workers_num’ and ‘Competitor_in_mkt’. Applied IQR-based capping (Winsorization) to reduce the impact of extreme values while preserving valuable supply chain information.
+- Applied Standard Scaler to normalise numerical features and improve model stability.
+- Built a baseline Linear Regression model and evaluated RMSE, MAE, MAPE, R-squared, and Adjusted R-squared.
+- The Linear Regression model achieved an R² of 0.99, but its performance was heavily influenced by the highly correlated feature storage_issue_reported_l3m (correlation = 0.99).
+- Developed an alternative baseline excluding this feature, the baseline model performance reduced to R² = 0.48, providing a more realistic benchmark.
+- Developed and executed 6 advanced regression models:
+  o	Decision Tree Regressor
+  o	Bagging Regressor
+  o	Random Forest Regressor
+  o	AdaBoost Regressor
+  o	Gradient Boosting Regressor
+  o	XGBoost Regressor
+- Selected Random Forest, Gradient Boosting, and XGBoost for hyperparameter tuning due to their strong predictive performance and potential for further improvements.
+- Selected the Tuned Gradient Boosting Regressor as the final model based on:
+  o	Highest Test R² Score (0.56)
+  o	Lowest Test RMSE (7668.57)
+  o	Strong generalisation capability
+  o	Stable train-test performance
+- Provided actionable insights and recommendations to improve warehouse operations, management, storage and overall efficiency.
 
 ## Model Performance
 Model	Test R²
