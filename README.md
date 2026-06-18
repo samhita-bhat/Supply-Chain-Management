@@ -55,10 +55,10 @@ XGBoost (Tuned)	0.54
 ## Best Model
 Gradient Boosting Regressor
 Performance:
-•	RMSE: 7668.57 
-•	MAE: 5886.27 
-•	R²: 0.56 
-•	MAPE: 39.02% 
+- RMSE: 7668.57
+- MAE: 5886.27
+- R²: 0.56
+- MAPE: 39.02% 
 
 ## Key Insights 
 - The variable ‘storage_issue_reported_l3m’ showed a very strong relationship with the target variable ‘product_wg_ton’. Warehouses reporting higher storage issues had higher product movement. This feature was later identified as a potential data leakage variable and removed from the baseline model.
