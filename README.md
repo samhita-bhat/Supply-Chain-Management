@@ -30,18 +30,18 @@ Efficient warehouse operations are critical for supply chain performance. Organi
 - The Linear Regression model achieved an R² of 0.99, but its performance was heavily influenced by the highly correlated feature storage_issue_reported_l3m (correlation = 0.99).
 - Developed an alternative baseline excluding this feature, the baseline model performance reduced to R² = 0.48, providing a more realistic benchmark.
 - Developed and executed 6 advanced regression models:
-  o	Decision Tree Regressor
-  o	Bagging Regressor
-  o	Random Forest Regressor
-  o	AdaBoost Regressor
-  o	Gradient Boosting Regressor
-  o	XGBoost Regressor
+  - Decision Tree Regressor
+  - Bagging Regressor
+  - Random Forest Regressor
+  - AdaBoost Regressor
+  - Gradient Boosting Regressor
+  - XGBoost Regressor
 - Selected Random Forest, Gradient Boosting, and XGBoost for hyperparameter tuning due to their strong predictive performance and potential for further improvements.
 - Selected the Tuned Gradient Boosting Regressor as the final model based on:
-  o	Highest Test R² Score (0.56)
-  o	Lowest Test RMSE (7668.57)
-  o	Strong generalisation capability
-  o	Stable train-test performance
+  - Highest Test R² Score (0.56)
+  - Lowest Test RMSE (7668.57)
+  - Strong generalisation capability
+  - Stable train-test performance
 - Provided actionable insights and recommendations to improve warehouse operations, management, storage and overall efficiency.
 
 ## Model Performance
@@ -61,16 +61,16 @@ Performance:
 •	MAPE: 39.02% 
 
 ## Key Insights 
-• The variable ‘storage_issue_reported_l3m’ showed a very strong relationship with the target variable ‘product_wg_ton’. Warehouses reporting higher storage issues had higher product movement. This feature was later identified as a potential data leakage variable and removed from the baseline model. 
-• Warehouses with better infrastructure conditions like electric supply, flood proof facilities, temperature regulation systems showed better warehouse functioning and product handling. 
-• Warehouse capacity and workforce affected the product shipment. Larger warehouses with more workforce and greater distributor coverage handled larger product volumes. 
-• Geographical factors influenced the warehouse performance. Warehouses located farther from distributor hubs experienced lower operational efficiency due to transportation and delivery challenges. 
+- The variable ‘storage_issue_reported_l3m’ showed a very strong relationship with the target variable ‘product_wg_ton’. Warehouses reporting higher storage issues had higher product movement. This feature was later identified as a potential data leakage variable and removed from the baseline model.
+- Warehouses with better infrastructure conditions like electric supply, flood proof facilities, temperature regulation systems showed better warehouse functioning and product handling.
+- Warehouse capacity and workforce affected the product shipment. Larger warehouses with more workforce and greater distributor coverage handled larger product volumes.
+- Geographical factors influenced the warehouse performance. Warehouses located farther from distributor hubs experienced lower operational efficiency due to transportation and delivery challenges. 
 
 ## Actionable Business Recommendations 
-• The company should invest in temperature regulation systems, backup power supply and flood proof mechanisms to improve the efficiency and reduce the disruptions. 
-• According to the numbers, the workforce doesn’t really affect the product movement. So, focus on productivity improvement by implementing training, using technology and automation. 
-• Increase storage capacity to accommodate growing product volumes and reduce storage related issues. 
-• Consider expanding warehouse capacity in high volume regions to reduce delivery times and improve customer service levels 
-• Lower certified warehouses can adopt best practices from highly certified warehouses to improve the quality standards, and overall performance.
+- The company should invest in temperature regulation systems, backup power supply and flood proof mechanisms to improve the efficiency and reduce the disruptions.
+- According to the numbers, the workforce doesn’t really affect the product movement. So, focus on productivity improvement by implementing training, using technology and automation.
+- Increase storage capacity to accommodate growing product volumes and reduce storage related issues.
+- Consider expanding warehouse capacity in high volume regions to reduce delivery times and improve customer service levels.
+- Lower certified warehouses can adopt best practices from highly certified warehouses to improve the quality standards, and overall performance.
 
 
