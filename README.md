@@ -10,9 +10,9 @@ This project aims to predict warehouse product movement (product weight in tons)
 Efficient warehouse operations are critical for supply chain performance. Organizations need to understand how factors such as warehouse capacity, infrastructure, workforce, storage issues, and distribution networks impact product movement. This project builds predictive models to estimate warehouse throughput and generate actionable business recommendations.
 
 ## Dataset
-•	25,000 warehouse records 
-•	Numerical and categorical features 
-•	Target Variable: product_wg_ton 
+- 25,000 warehouse records
+- Numerical and categorical features
+- Target Variable: product_wg_ton 
 
 ## Key Steps
 - Conducted Exploratory Data Analysis (EDA) to understand data distribution, identify patterns and assess relationships between variables.
